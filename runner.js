@@ -48,7 +48,7 @@ var loginAndPost = async function (account, post) {
 	var browser;
 
 	try {
-		browser = await puppeteer.launch({ headless: false });
+		browser = await puppeteer.launch({ headless: true });
 		var page = await browser.newPage();
 		page.setDefaultNavigationTimeout(60000);
 
