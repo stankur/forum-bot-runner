@@ -69,7 +69,7 @@ var loginAndPost = async function (account, post) {
 		// the reason why we expand spaces is so that each title will be unique but still be displayed the same (muut won't accept duplicate title)
 		await createNewPost(
 			page,
-			expandSpaces(post.title, spacesToAddBeforeExceedingLimit),
+			expandSpaces(post.title, spacesToAddBeforeExceedingLimit + 1),
 			post.body
 		);
 
